@@ -19,7 +19,6 @@ const riga = 8;
 const totalCell = colonna * riga;
 
 
-const numeri = [];
 
 
 //inizio il ciclo per individuare le colonne e le righe e inserirle all'interno della griglia
@@ -30,7 +29,8 @@ for (let i = 0; i < totalCell; i ++ ){
     // aggiungo una classe cella
     cella.classList.add('cella');
     griglia.appendChild(cella);
-    cella.innerText = generateNumber (1, totalCell, numeri);
+
+    cella.innerText = (i + 1);
 }
 
 
@@ -39,14 +39,3 @@ for (let i = 0; i < totalCell; i ++ ){
 
 
 
-// devo inseire num random dell'array numeri
-
-function generateNumber (min, max, record) {
-    let number = generateNumber (min, max);
-
-    while (record.includes (number)) {
-        number = generateNumber (min, max)
-    }
-
-    return number;
-}
