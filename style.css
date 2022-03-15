@@ -8,13 +8,24 @@
   width: 500px;
   height: 500px;
   margin: 50px auto;
-  background-color: aqua;
+  background-color: yellow;
   display: flex;
   flex-wrap: wrap;
 }
 
 .cella {
-  width: calc(100% / 8);
-  height: calc(100% / 8);
+  width: calc(100% / 10);
+  height: calc(100% / 10);
   border: 1px solid black;
 }
+
+.cella.bg-azzurro {
+  background-color: aqua;
+}
+
+/* function saluta () {
+  console.log ('ciao');
+}
+
+saluta ();
+*/
