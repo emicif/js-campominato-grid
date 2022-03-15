@@ -21,6 +21,9 @@ function totgriglia (colonna, riga) {
 const totalCell = totgriglia (10, 10);
 
 
+
+
+
 //inizio il ciclo per individuare le colonne e le righe e inserirle all'interno della griglia
 for (let i = 0; i < totalCell; i ++ ){
     //const cella = document.createElement('div');
