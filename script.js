@@ -11,15 +11,14 @@ console.log ('JS OK')
 const griglia = document.getElementById('griglia');
 
 
-// creo le variabili delle colonne e delle righe
-const colonna = 10;
-const riga = 10;
+// creo la funzione per modificarla poi in base al numero totali di celle che ho
 
-//calcolo il totale delle colonne e righe
-const totalCell = colonna * riga;
-
-
-
+function totgriglia (colonna, riga) {
+    const totalCell = colonna * riga;
+    return totalCell;
+}
+// per il bonus modificare con difficoltà 2 con (9, 9) e diccoltà 3 con (7, 7)
+const totalCell = totgriglia (10, 10);
 
 
 //inizio il ciclo per individuare le colonne e le righe e inserirle all'interno della griglia
@@ -48,15 +47,5 @@ function createCell(){
     return cella;
 }
 
-/*
-function clickCell() {
-    const cella = document.createElement('div');
-    cella.addEventListener('click', function() {
-        cella.classList.toggle ('bg-azzurro');
-        return cella;
-        }
-      )
-}
-*/
 
 
